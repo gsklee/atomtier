@@ -1,0 +1,34 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "author": "",
+  "license": "",
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "./lib/json-as-toml",
+  "activationCommands": {
+    "atom-workspace": "json-as-toml:toggle"
+  },
+  "scripts": {
+    "init": "./commands/init",
+    "update": "./commands/update",
+    "preinstall": "npm cache clean",
+    "precommit": "npm test",
+    "test": "./commands/test",
+    "start": "./commands/start"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^0.10.2"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "semistandard": {
+    "parser": "babel-eslint"
+  }
+}
